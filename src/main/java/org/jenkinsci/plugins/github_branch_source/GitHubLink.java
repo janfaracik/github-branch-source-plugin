@@ -27,6 +27,9 @@ package org.jenkinsci.plugins.github_branch_source;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.model.Action;
 import java.net.URL;
+
+import jenkins.model.menu.Group;
+import jenkins.model.menu.event.LinkAction;
 import org.jenkins.ui.icon.IconSpec;
 
 /**
@@ -68,8 +71,13 @@ public class GitHubLink implements Action, IconSpec {
     }
 
     @Override
-    public String getUrlName() {
-        return url;
+    public jenkins.model.menu.event.Action getAction() {
+        return LinkAction.of(url);
+    }
+
+    @Override
+    public Group getGroup() {
+        return Group.FIRST_IN_APP_BAR;
     }
 
     @Override
