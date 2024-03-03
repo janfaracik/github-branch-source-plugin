@@ -27,7 +27,6 @@ package org.jenkinsci.plugins.github_branch_source;
 import edu.umd.cs.findbugs.annotations.NonNull;
 import hudson.model.Action;
 import java.net.URL;
-
 import jenkins.model.menu.Group;
 import jenkins.model.menu.event.LinkAction;
 import org.jenkins.ui.icon.IconSpec;
