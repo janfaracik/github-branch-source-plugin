@@ -39,10 +39,7 @@
   </f:radioBlock>
 
   <script type="text/javascript" src="${rootURL}/plugin/github-branch-source/github-scm-source.js"/>
-  <f:block>
-    <br/>
-    <br/>
-  </f:block>
+
   <f:entry title="${%Behaviours}">
     <scm:traits field="traits"/>
   </f:entry>
